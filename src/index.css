@@ -29,5 +29,8 @@ html {
 
 .header {
   height: 100vh;
-  background: url("./globe.webp") center/cover no-repeat fixed ; 
+  background-image: url("../public/globe.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
