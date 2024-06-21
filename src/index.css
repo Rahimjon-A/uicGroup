@@ -31,6 +31,3 @@ html {
   height: 100vh;
   background: url("./globe.webp") center/cover no-repeat fixed ; 
 }
-.hero {
-  background: url("./mountain.webp") center/cover no-repeat fixed ; 
-}
