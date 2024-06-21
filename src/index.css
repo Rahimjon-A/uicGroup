@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --black:rgba(118, 117, 117, 0.5) ;
+  --pri: #00a795;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#blur:hover {
+  background: rgba(0, 167, 149, 0.2);
+}
+
+.header {
+  height: 100vh;
+  background: url("./globe.webp") center/cover no-repeat fixed ; 
+}
+.hero {
+  background: url("./mountain.webp") center/cover no-repeat fixed ; 
+}
