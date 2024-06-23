@@ -1,0 +1,141 @@
+
+.Vacansies-Wrapper {
+  padding: 120px 0px 0px 0px;
+  background-color: #1e1e20;
+}
+.Vacansies-Wrapper .BlogPage-First-elem {
+  margin-bottom: 5rem;
+}
+.Vacansies-Wrapper .BlogPage-First-elem .BlogPage-Title-elem {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 220px;
+  font-weight: 800;
+  line-height: 100px;
+  line-height: 252px;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+}
+.Vacansies-Wrapper .BlogPage-First-elem .BlogPage-Title-elem span {
+  position: absolute;
+  bottom: 60px;
+  font-size: 78px;
+  line-height: 94px;
+  text-transform: uppercase;
+  font-weight: 800;
+  -webkit-text-fill-color: white;
+}
+.Vacansies-Wrapper .wrapper-vacansy {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  color: white;
+  padding: 0px 0px 150px 0px;
+}
+.Vacansies-Wrapper .wrapper-vacansy a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.Vacansies-Wrapper .wrapper-vacansy a .wrapper-vacansy-child-1 {
+  padding: 20px;
+  background-color: #2b2b2f;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.Vacansies-Wrapper .wrapper-vacansy a .wrapper-vacansy-child-1 h1 {
+  font-size: 23px;
+  padding: 20px 0px;
+  font-weight: 500;
+}
+.Vacansies-Wrapper .wrapper-vacansy a .wrapper-vacansy-child-1 .wrapper-vacansy-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+.Vacansies-Wrapper .wrapper-vacansy a .wrapper-vacansy-child-1 .wrapper-vacansy-foot .wrapper-oval-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 7px;
+  border-radius: 50%;
+  background-color: rgb(84, 84, 84);
+}
+.Vacansies-Wrapper .wrapper-vacansy a .wrapper-vacansy-child-1 .wrapper-vacansy-foot .wrapper-vacansy-date-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.Vacansies-Wrapper .wrapper-vacansy a .wrapper-vacansy-child-1 .wrapper-vacansy-foot .wrapper-vacansy-date-box p {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(196, 193, 193);
+}
+.Vacansies-Wrapper .wrapper-vacansy a .wrapper-vacansy-child-1 .wrapper-vacansy-foot .wrapper-vacansy-time {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.Vacansies-Wrapper .wrapper-vacansy a .wrapper-vacansy-child-1 .wrapper-vacansy-foot .wrapper-vacansy-time .timer-child {
+  display: flex;
+  gap: 10px;
+}
+.Vacansies-Wrapper .wrapper-vacansy a .wrapper-vacansy-child-1 .wrapper-vacansy-foot .wrapper-vacansy-time .timer-child p {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(216, 213, 213);
+}
+.Vacansies-Wrapper .wrapper-vacansy a .wrapper-vacansy-child-1 .btn-vacansy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: -40px;
+  background-color: #252527;
+  outline: none;
+  border: 0;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.Vacansies-Wrapper .wrapper-vacansy a .wrapper-vacansy-child-1 .btn-vacansy svg {
+  font-size: 40px;
+}
+.Vacansies-Wrapper .wrapper-vacansy a .wrapper-vacansy-child-1 .btn-vacansy p {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+.Vacansies-Wrapper .wrapper-vacansy a .wrapper-vacansy-child-1 .btn-vacansy .next-parent {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #01a795;
+}
+.Vacansies-Wrapper .wrapper-vacansy a .wrapper-vacansy-child-1 .btn-vacansy .next-parent svg {
+  font-size: 20px;
+}
+.Vacansies-Wrapper .wrapper-vacansy a .wrapper-vacansy-child-1:hover .wrapper-vacansy-foot p {
+  transition: all 0.4s;
+  color: white !important;
+}
+.Vacansies-Wrapper .wrapper-vacansy a .wrapper-vacansy-child-1:hover .btn-vacansy {
+  background-color: #01a795;
+}
+.Vacansies-Wrapper .wrapper-vacansy a .wrapper-vacansy-child-1:hover .btn-vacansy .money path {
+  fill: white;
+}
+.Vacansies-Wrapper .wrapper-vacansy a .wrapper-vacansy-child-1:hover .btn-vacansy .next-parent {
+  background-color: #5eb8ae;
+}

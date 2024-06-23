@@ -34,3 +34,8 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.career {
+  display: grid;
+  grid-template-columns: 1fr;
+}

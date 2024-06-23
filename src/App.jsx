@@ -11,10 +11,9 @@ const App = () => {
       <Header />
       <About />
       <Portfolio/>
-      <Services/>
+      <Services title={"Services"} desc={'OUR'} />
       <Partners/>
       <Footer/>
-      
     </>
   );
 };

@@ -1,6 +1,7 @@
 import { IoMdGlobe } from 'react-icons/io';
 import Logo from './Logo';
 import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const blurRef = useRef();
@@ -23,7 +24,9 @@ const Navbar = () => {
   return (
     <nav  ref={blurRef} className="fixed z-50 top-0  w-full">
       <div className="container  w-full flex items-center py-4  ">
-        <Logo />
+       <Link to={"/"}>
+       <Logo />
+       </Link>
 
         <div className="flex flex-row-reverse items-center w-full gap-14 ">
           <div className="flex  peer group  items-center gap-1 border border-[#9caaac] px-2 py-1 duration-300 transition-all rounded-lg ">
@@ -48,19 +51,29 @@ const Navbar = () => {
 
           <ul className="flex peer-hover:hidden text-[#9caaac] text-[16px] font-semibold gap-8 ">
             <li className="hover:text-white duration-300  ">
-              <a href="#">ABOUT US</a>
+             <Link to={"/about"}>
+             <span>ABOUT US</span>
+             </Link>
             </li>
             <li className="hover:text-white duration-300  ">
-              <a href="#">SERVICES</a>
+              <Link to={"/service"}>
+              <span>SERVICES</span>
+              </Link>
             </li>
             <li className="hover:text-white duration-300  ">
-              <a href="#">PORTFOLIO</a>
+              <Link to={"/portfolio"}>
+              <span>PORTFOLIO</span>
+              </Link>
             </li>
             <li className="hover:text-white duration-300  ">
-              <a href="#">CAREER</a>
+              <Link to={"/career"}>
+              <span>CAREER</span>
+              </Link>
             </li>
             <li className="hover:text-white duration-300  ">
-              <a href="#">BLOG</a>
+              <Link to={"/blog"}>
+              <span>BLOG</span>
+              </Link>
             </li>
           </ul>
         </div>

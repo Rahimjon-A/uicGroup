@@ -1,0 +1,221 @@
+.Blog-Page-Parent {
+  background-color: #1e1e20;
+  margin: auto;
+  padding: 0;
+  
+  .BlogPage-First-elem {
+    padding-top: 150px;
+    margin-bottom: 5rem;
+    .BlogPage-Title-elem {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 220px;
+      font-weight: 800;
+      line-height: 100px;
+      line-height: 252px;
+      text-transform: uppercase;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+      span {
+        position: absolute;
+        font-size: 78px;
+        line-height: 94px;
+        text-transform: uppercase;
+        font-weight: 800;
+        -webkit-text-fill-color: white;
+      }
+    }
+  }
+  .Blog-Page-Categoriy {
+    width: 100%;
+    .Categoriy-Parent {
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+      .categoriy-icons {
+        width: max-content;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 10px;
+        background-color: #00a795;
+        border: 1px solid #00a795;
+        border-radius: 10px;
+        cursor: pointer;
+        svg path {
+          fill: white;
+        }
+      }
+      .categoriy-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        overflow: hidden;
+        transition-duration: 0.3s;
+        .categoriy-title {
+          display: flex;
+          align-items: flex-start;
+          width: max-content;
+          padding: 11px 32px;
+          font-weight: 700;
+          font-size: 16px;
+          color: rgb(158, 160, 163);
+          border-radius: 8px;
+          cursor: pointer;
+          border: 2px solid #333436;
+          transition-duration: 0.3s;
+          &:hover {
+            border: 2px solid #00a795;
+            border-radius: 11px;
+            color: #00a795;
+          }
+        }
+      }
+    }
+    .search-page {
+      margin-top: 28px;
+      margin-bottom: 50px;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      border-radius: 0.5rem;
+      border: 1.4px solid transparent;
+      background-color: rgba(20, 20, 21, 0.46);
+      transition: border-color 0.3s ease;
+      &:focus-within {
+        border-color: #00a795;
+        border: 1.5px solid #00a795;
+      }
+      .search-icon {
+        padding: 0px 10px;
+      }
+      input {
+        width: 100%;
+        background-color: transparent;
+        padding: 13px 0.875rem;
+        font-family: Roboto;
+        font-size: 16px;
+        border: none;
+        color: rgb(255 255 255);
+
+        &:focus {
+          border-color: #00a795;
+        }
+      }
+    }
+    .Blog-Post-Parent {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 2.75rem;
+      row-gap: 2.5rem;
+      padding-bottom: 100px;
+
+      @media (max-width: 1024px) {
+        grid-template-columns: 1fr;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        .Blog-Post-Child-First {
+          .Blog-Post-Left-Img-Blog {
+            .Img-Parent {
+              display: grid;
+              grid-template-columns: repeat(auto-fill, minmax(270px, 270px));
+              background-color: rgb(43 43 46);
+              border-radius: 8px;
+              .img-post {
+                width: 220px;
+                height: 220px;
+                img {
+                  display: flex;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 8px;
+                  object-fit: cover;
+                  transform: translateX(-20px) translateY(-12px);
+                  transition: transform 0.5s ease;
+                }
+              }
+              &:hover {
+                img {
+                  transform: translateX(0px) translateY(0px);
+                }
+                h2 {
+                  transform: translateX(50px) translateY(170px);
+                }
+              }
+            }
+            .Post-title-text {
+              padding-top: 25px;
+              .post-blog-text-title {
+                span {
+                  padding: 1rem 0px;
+                  font-size: 1rem;
+                  letter-spacing: 0.002rem;
+                  line-height: 130% !important;
+                  font-weight: 700;
+                  color: white;
+                }
+                p {
+                  padding: 1rem 0px;
+                  font-size: 0.75rem;
+                  color: #e0e0e099;
+                  line-height: 140% !important;
+                  font-weight: 400;
+                }
+                .hrStyle {
+                  opacity: 0.3;
+                }
+                .icon-Blogs {
+                  display: flex;
+                  gap: 30px;
+                  .kalendar-Block {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    .icon-k {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      width: 28px;
+                      height: 28px;
+                      background-color: #ffffff24;
+                      border-radius: 100%;
+                      svg path {
+                        fill: white;
+                      }
+                    }
+                  }
+                  span {
+                    font-weight: 500;
+                    font-size: 13px;
+                    color: rgb(165 165 166);
+                  }
+                  .hide-Block {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    .icon-h {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      width: 28px;
+                      height: 28px;
+                      background-color: #ffffff24;
+                      border-radius: 100%;
+                      svg path {
+                        fill: white;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

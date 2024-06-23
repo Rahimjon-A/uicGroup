@@ -4,6 +4,7 @@ import Lock from './Lock';
 import { RiExpandDiagonalFill } from 'react-icons/ri';
 import { LuPhoneCall } from 'react-icons/lu';
 import { FaArrowRightLong } from 'react-icons/fa6';
+import AboutItems from './AboutItems';
 
 const About = () => {
   const [count, setCount] = useState(0);
@@ -118,6 +119,7 @@ const About = () => {
               </div>
             </div>
           </div>
+          <AboutItems/>
         </div>
         {count === 1 && (
           <div
@@ -147,6 +149,7 @@ const About = () => {
             </div>
           </div>
         )}
+
       </div>
     </div>
   );

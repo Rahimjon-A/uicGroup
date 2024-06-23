@@ -1,6 +1,6 @@
 import React from "react";
 
-const Services = () => {
+const Services = ({title, desc}) => {
   return (
     <div className="w-full bg-[#1f1f21]">
       <div className="max-w-[1200px] w-full flex flex-col items-center justify-center mx-auto py-20">
@@ -8,10 +8,10 @@ const Services = () => {
         
         <div className="w-full items-center justify-start">
           <div className="flex items-center justify-start gap-2">
-            <p className="text-[16px] text-[#00A795]">OUR</p>
+            <p className="text-[16px] text-[#00A795]">{desc}</p>
             <div className="w-[32px] border-[#ffffff] opacity-25 border"></div>
           </div>
-          <h1 className=" text-[64px] text-white">Services</h1>
+          <h1 className=" text-[64px] text-white">{title} </h1>
         </div>
         {/* cards */}
         <div className="grid grid-cols-2 gap-8 pt-8">
